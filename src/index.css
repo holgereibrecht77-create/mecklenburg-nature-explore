@@ -9,49 +9,50 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 152 15% 20%;
+    --foreground: 220 14% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 152 15% 20%;
+    --card-foreground: 220 14% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 152 15% 20%;
+    --popover-foreground: 220 14% 20%;
 
-    --primary: 152 60% 35%;
+    /* MV Government colors - Blue primary */
+    --primary: 200 85% 45%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 200 25% 92%;
-    --secondary-foreground: 152 15% 20%;
+    --secondary-foreground: 220 14% 20%;
 
-    --muted: 200 15% 96%;
-    --muted-foreground: 152 8% 45%;
+    --muted: 210 15% 96%;
+    --muted-foreground: 220 8% 45%;
 
-    --accent: 200 50% 85%;
-    --accent-foreground: 152 25% 15%;
+    --accent: 175 60% 50%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 200 20% 88%;
-    --input: 200 20% 88%;
-    --ring: 152 60% 35%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 200 85% 45%;
     
-    /* Custom nature theme colors */
-    --forest-green: 152 60% 35%;
-    --forest-green-dark: 152 65% 25%;
-    --lake-blue: 200 85% 45%;
-    --lake-blue-light: 200 60% 85%;
-    --earth-brown: 25 35% 55%;
-    --nature-gold: 45 85% 65%;
+    /* MV Official theme colors */
+    --mv-blue: 200 85% 45%;
+    --mv-teal: 175 60% 50%;
+    --mv-green: 152 60% 35%;
+    --mv-red: 0 70% 55%;
+    --mv-light-blue: 200 50% 90%;
+    --mv-dark-blue: 200 85% 35%;
     
-    /* Gradients */
-    --gradient-nature: linear-gradient(135deg, hsl(var(--forest-green)), hsl(var(--lake-blue)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--forest-green-dark)) 0%, hsl(var(--lake-blue)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(var(--lake-blue-light)) 100%);
+    /* Government style gradients */
+    --gradient-mv: linear-gradient(135deg, hsl(var(--mv-blue)), hsl(var(--mv-teal)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--mv-red)) 0%, hsl(var(--mv-blue)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(var(--mv-light-blue)) 100%);
     
-    /* Shadows */
-    --shadow-nature: 0 10px 30px -5px hsl(var(--forest-green) / 0.1);
-    --shadow-card: 0 4px 20px -2px hsl(var(--lake-blue) / 0.15);
+    /* Official shadows */
+    --shadow-official: 0 2px 8px -2px hsl(var(--mv-blue) / 0.1);
+    --shadow-card: 0 4px 12px -2px hsl(var(--mv-blue) / 0.15);
 
     --radius: 0.5rem;
 

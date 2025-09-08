@@ -10,40 +10,43 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+    <section className="relative bg-mv-red text-white overflow-hidden">
+      {/* Background pattern/image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
         style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
-      </div>
+      />
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          Nationale{" "}
-          <span className="bg-gradient-to-r from-nature to-lake-light bg-clip-text text-transparent">
-            Naturlandschaften
-          </span>
-        </h1>
-        <h2 className="text-xl md:text-2xl text-white/90 mb-8 font-light">
-          Mecklenburg-Vorpommern
-        </h2>
-        <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Entdecken Sie die unberührte Schönheit der Nationalparks, Naturparks und 
-          Biosphärenreservate in Deutschlands Nordosten
-        </p>
+      <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
+        <div className="max-w-2xl">
+          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+              Nationale Naturlandschaften
+            </h1>
+            <h2 className="text-xl md:text-2xl mb-6 font-light opacity-90">
+              Mecklenburg-Vorpommern
+            </h2>
+            <p className="text-lg mb-8 leading-relaxed opacity-90">
+              Entdecken Sie die unberührte Schönheit der Nationalparks, Naturparks und 
+              Biosphärenreservate in Deutschlands Nordosten. Erleben Sie einzigartige 
+              Landschaften zwischen Ostsee und Seenplatte.
+            </p>
+            
+            <Button 
+              size="lg" 
+              variant="secondary"
+              className="px-8 py-3 text-lg bg-white text-mv-red hover:bg-white/90"
+              onClick={scrollToContent}
+            >
+              mehr zu den Naturlandschaften →
+            </Button>
+          </div>
+        </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
-            variant="hero"
-            className="px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
-            onClick={scrollToContent}
-          >
-            Naturlandschaften entdecken
-          </Button>
+        {/* Additional info or image on the right side could go here */}
+        <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden lg:block">
+          <div className="w-96 h-64 bg-white/10 backdrop-blur-sm rounded-lg"></div>
         </div>
       </div>
       
