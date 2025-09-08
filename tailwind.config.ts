@@ -47,6 +47,17 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Nature theme colors
+        forest: {
+          DEFAULT: "hsl(var(--forest-green))",
+          dark: "hsl(var(--forest-green-dark))",
+        },
+        lake: {
+          DEFAULT: "hsl(var(--lake-blue))",
+          light: "hsl(var(--lake-blue-light))",
+        },
+        earth: "hsl(var(--earth-brown))",
+        nature: "hsl(var(--nature-gold))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
